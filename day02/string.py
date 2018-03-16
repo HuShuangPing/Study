@@ -3,6 +3,7 @@
 # Author:HuShuangPing
 
 #字符串
+#对字符串不可以修改
 name = "my name is {name} and age is {age}"
 print(name.capitalize())    #首字母大写
 print(name.count("a"))      #统计字母"a"有多少个

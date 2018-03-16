@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af7f36a-b883-424e-810d-178c228bbf4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/3level_menus.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/dictionary.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/dictionary2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/shopping.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/string.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day02/tuple.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day03/array.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day03/file_op.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day03/yesterday" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day03/yesterday2" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/day02/names.py" afterPath="$PROJECT_DIR$/day02/names.py" />
+      <change beforePath="$PROJECT_DIR$/day02/string.py" afterPath="$PROJECT_DIR$/day02/string.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +20,10 @@
     <SUITE FILE_PATH="coverage/Study$dictionary.coverage" NAME="dictionary Coverage Results" MODIFIED="1521130374765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/Study$names.coverage" NAME="names Coverage Results" MODIFIED="1521043056938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/Study$string.coverage" NAME="string Coverage Results" MODIFIED="1521127639690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
+    <SUITE FILE_PATH="coverage/Study$array.coverage" NAME="array Coverage Results" MODIFIED="1521213846654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
     <SUITE FILE_PATH="coverage/Study$test.coverage" NAME="test Coverage Results" MODIFIED="1521126179203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/Study$sys.coverage" NAME="sys Coverage Results" MODIFIED="1521017245633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
+    <SUITE FILE_PATH="coverage/Study$file_op.coverage" NAME="file_op Coverage Results" MODIFIED="1521216118906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
     <SUITE FILE_PATH="coverage/Study$sys_mod.coverage" NAME="sys_mod Coverage Results" MODIFIED="1521018109313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/Study$dictionary2.coverage" NAME="dictionary2 Coverage Results" MODIFIED="1521167572567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/Study$3level_menus.coverage" NAME="3level_menus Coverage Results" MODIFIED="1521177586335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
@@ -34,18 +32,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="3level_menus.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day02/3level_menus.py">
+      <file leaf-file-name="file_op.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day03/file_op.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-              <folding>
-                <element signature="e#86#598#0" expanded="false" />
-                <element signature="e#609#803#0" expanded="false" />
-                <element signature="e#624#695#0" expanded="false" />
-                <element signature="e#710#779#0" expanded="false" />
-                <element signature="e#730#769#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="343">
+              <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yesterday2" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03/yesterday2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yesterday" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day03/yesterday">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,12 +90,16 @@
         <option value="$PROJECT_DIR$/day01/passwd.py" />
         <option value="$PROJECT_DIR$/day02/test.py" />
         <option value="$PROJECT_DIR$/day02/tuple.py" />
-        <option value="$PROJECT_DIR$/day02/string.py" />
         <option value="$PROJECT_DIR$/day02/dictionary.py" />
         <option value="$PROJECT_DIR$/day02/names.py" />
         <option value="$PROJECT_DIR$/day02/shopping.py" />
         <option value="$PROJECT_DIR$/day02/dictionary2.py" />
         <option value="$PROJECT_DIR$/day02/3level_menus.py" />
+        <option value="$PROJECT_DIR$/day02/string.py" />
+        <option value="$PROJECT_DIR$/day03/array.py" />
+        <option value="$PROJECT_DIR$/day03/yesterday" />
+        <option value="$PROJECT_DIR$/day03/yesterday2" />
+        <option value="$PROJECT_DIR$/day03/file_op.py" />
       </list>
     </option>
   </component>
@@ -95,9 +111,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
-    <option name="y" value="21" />
+    <option name="y" value="24" />
     <option name="width" value="1346" />
-    <option name="height" value="687" />
+    <option name="height" value="684" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -117,8 +133,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,17 +143,14 @@
             <path>
               <item name="Study" type="b2602c69:ProjectViewProjectNode" />
               <item name="Study" type="462c0819:PsiDirectoryNode" />
-              <item name="day01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Study" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="day03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,6 +160,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SoftWare\code\pycharm\Study\day03" />
       <recent name="E:\SoftWare\code\pycharm\Study" />
     </key>
   </component>
@@ -164,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.3level_menus">
+  <component name="RunManager" selected="Python.file_op">
     <configuration name="3level_menus" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,20 +196,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="array" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Study" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day02/dictionary.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/array.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,20 +234,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="file_op" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Python/workspace/test/second" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Study" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Python/workspace/test/second/practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day03/file_op.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,19 +273,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dictionary" />
-      <item index="1" class="java.lang.String" itemvalue="Python.practice" />
-      <item index="2" class="java.lang.String" itemvalue="Python.shopping" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dictionary2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.3level_menus" />
+      <item index="0" class="java.lang.String" itemvalue="Python.shopping" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dictionary2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.3level_menus" />
+      <item index="3" class="java.lang.String" itemvalue="Python.array" />
+      <item index="4" class="java.lang.String" itemvalue="Python.file_op" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.3level_menus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dictionary2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.shopping" />
-        <item index="3" class="java.lang.String" itemvalue="Python.practice" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dictionary" />
+        <item index="0" class="java.lang.String" itemvalue="Python.file_op" />
+        <item index="1" class="java.lang.String" itemvalue="Python.array" />
+        <item index="2" class="java.lang.String" itemvalue="Python.3level_menus" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dictionary2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.shopping" />
       </list>
     </recent_temporary>
   </component>
@@ -294,14 +306,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="21" width="1346" height="687" extended-state="0" />
+    <frame x="10" y="24" width="1346" height="684" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26727274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26691043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,11 +351,25 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/day02/3level_menus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#86#598#0" expanded="false" />
+            <element signature="e#609#803#0" expanded="false" />
+            <element signature="e#624#695#0" expanded="false" />
+            <element signature="e#710#779#0" expanded="false" />
+            <element signature="e#730#769#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day02/shopping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day02/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day02/dictionary.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -586,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day02/3level_menus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        <state relative-caret-position="149">
+          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
           <folding>
             <element signature="e#86#598#0" expanded="false" />
             <element signature="e#609#803#0" expanded="false" />
@@ -595,6 +614,46 @@
             <element signature="e#710#779#0" expanded="false" />
             <element signature="e#730#769#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/yesterday2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="173" column="17" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/yesterday">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/file_op.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
