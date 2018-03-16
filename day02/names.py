@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author:HuShuangPing
-
+import copy
 #列表[]
 
-names =["张三","王五","李四","赵谦","周五","周五"]
+names =["张三","王五","李四","赵谦","周五","周五",["老赵","老周","老胡"]]
 
 print(names[0],names[2])
 print(names[-1])  #最后一个元素
@@ -12,6 +12,7 @@ print(names[-1])  #最后一个元素
 print(names[:])  #全取
 print(names[:3])    #从0开始取
 print(names[-2:])   #取最后连个元素
+print(names[::2])  #从头到尾跳着进行切片
 
 #添加
 names.append("张二麻子")  #直接在最后一个元素添加
@@ -44,3 +45,13 @@ names.sort()    #排序 ACII码大小进行排序
 names2 = [1,2,3,4,5]
 
 names.extend(names2)   #将names2和names表进行合并，但name2表还在
+
+name3 = names.copy()  #复制,浅拷贝即对names进行修改，name3也会发生变化
+name4 = copy.deepcopy(names)  #导入copy模块，name4和names是两份独立的数据
+
+
+name3[6][1] ="棒子"   #对内嵌的列表中的元素进行修改
+
+#列表循环
+for i in names:
+    print(i)
