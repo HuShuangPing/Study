@@ -40,3 +40,34 @@ for line in f:    #此时的数据不是上面的列表，此时的f是一个迭
         continue
     count += 1
     print(line)   #一行读取存入内存，然后读取另一行，将上一行内容换出，存入内存，效率高，不占用内存
+
+f.close()
+
+print(f.tell())  #打印当前光标的位置
+print(f.readline())  #
+print(f.tell())  #打印的是字符的光标
+f.seek(0)        #将光标回到初始的位置，一般是文本文件
+
+print(f.encoding)  #打印编码的方式
+
+print(f.flush())   #刷新
+
+f.truncate()   #什么都不写，会将文件清空
+
+f2 = open("yesterday",'r+',encoding="utf-8")  #r+是既能读又能写，读写（读）
+                                              #在原来的文件上进行读写
+                                              #打开一个源文件进行修改会在源文件上进行覆盖
+f3 = open("yesterday",'w+',encoding="utf-8")  #w+既能写又能读，写读
+                                               #创建一个新文件（空），往里面写东西读
+f4 = open("yesterday",'a+',encoding="utf-8")  #a+:追加读，追加后可以读
+
+f5 = open("yesterday",'rb',encoding="utf-8") #二进制文件读（如；视频文件）
+                                             #网络传输（socket）
+f6 = open("yesterday",'wb',encoding="utf-8") #二进制文件写
+f6.write("hello".encode())       #将字符串转换为二进制编码写入
+
+
+
+#修改文件（原先的写入会对源文件进行覆盖写入）
+
+
