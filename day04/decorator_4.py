@@ -7,9 +7,9 @@
 import time
 #定义一个高阶函数
 def timer(func):      #相当于test1=timer(test1)
-    def deco():
+    def deco(*args,**kwargs):    #若调用的函数有参数则传入，无就不传入
         start_time=time.time()
-        func()
+        func(*args,*kwargs)
         stop_time = time.time()
         print("the func run time is %s"%(stop_time-start_time))
     return deco
@@ -18,8 +18,8 @@ def timer(func):      #相当于test1=timer(test1)
 def test1():
     time.sleep(3)
     print("in the test1")
-
-def test2():
+@timer
+def test2(name,age):
     time.sleep(3)
     print("in the test2")
 
@@ -34,3 +34,4 @@ def test2():
 
 #test1 = timmer(test1)  #func=test1
 test1()
+test2("Jack",22)
