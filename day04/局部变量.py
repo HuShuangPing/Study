@@ -10,7 +10,7 @@ def change(name):
     global school         #在函数内声明一个全局变量
                           #不要在函数内对全局变量进行修改
                           #在函数外对全局变量进行修改
-
+ #注：当全局变量和局部变量覆盖时，以局部变量为准
 
 name="Jack"
 change(name)       #第二个打印值为Jack Hu
