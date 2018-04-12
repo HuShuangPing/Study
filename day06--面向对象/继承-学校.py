@@ -15,7 +15,7 @@ class School(object):
         self.staffs.append(staff_obj)
         print("雇佣新员工%s" % staff_obj.name)
 
-class SchoolMember(object):
+class SchoolMember(object):     #是个基类，不需要单独是实例化
     def __init__(self,name,age,sex):
         self.name = name
         self.age = age
@@ -24,8 +24,9 @@ class SchoolMember(object):
         pass
 
 class Teacher(SchoolMember):
-    def __init__(self,name,age,sex,salary,course):
+    def __init__(self,name,age,sex,salary,course,school_obj):
         super(Teacher,self).__init__(name,age,sex)
+        self.school,name = school_obj    #组合继承，teacher类和School类就关联起来
         self.salary = salary
         self.course = course
     def tell(self):
