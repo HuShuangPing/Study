@@ -20,7 +20,7 @@ print("电话来了")
 #data = server.recv(1024)  #接受消息
                   #并发，出现错误
 #应改成
-data = conn.recv(1024)
+data = conn.recv(1024)  #官方推荐8192，即8K
 
 print("recv:",data)
 conn.send(data.upper)  #发送消息
