@@ -2,6 +2,9 @@
 # -*- coding:utf-8 -*-
 # Author:HuShuangPing
 
+#队列
+# 解耦，使程序直接实现松耦合，
+# 提高处理效率 ，
 import queue
 
 # q = queue.LifoQueue()   #后进先出
