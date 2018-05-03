@@ -1,0 +1,18 @@
+本文链接：http://www.cnblogs.com/alex3714/articles/5950372.html
+
+MySQL基本语句
+     show tables;  --查看有哪些表在数据库中
+     desc user;    --查看表结构，字段
+     select * from user/G;  --以数组形式查看数据
+
+     默认存在test库
+     %  --代表所有机器
+     grant all on test.* to 'Jack'@'%'identified by '123456qwe'
+
+    创建数据库-- create database Jackdb;
+    删除数据库-- drop database Jackdb;
+
+    create database Jackdb charset utf-8;   --数据库可以写中文
+
+MySQL常用命令：
+  1.创建数据表：

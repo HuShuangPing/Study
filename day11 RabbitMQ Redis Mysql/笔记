@@ -1,0 +1,113 @@
+文章链接:http://www.cnblogs.com/alex3714/articles/6217453.html
+
+RabbitMQ 消息队列 ---多个机器或多个进程进行交互的之间代理
+
+  Python
+     threading（线程） Queue 多个线程通信同步
+     进程Queue  父进程和子进程进行交互或同属于同一父进程下多个子进程进行交互
+1.
+RabbitMQ的RabbitMQ Command Prompt中输入rabbtimqctl.bat list_queues查看队列中的消息
+
+在开始栏搜索services.msc中找到RabbitMQ，关闭RabbitMQ，此时服务端断开，消息删除
+
+2.
+问：如果保持消息不丢失，持久化
+消息持久化 ，具体看producer代码
+
+3.消息公平分发（在消费者端加）具体看：consumer2
+    一个机器配置不高的消费者那里堆积了很多消息处理不完，
+    同时配置高的消费者却一直很轻松。
+    为解决此问题，可以在各个消费者端，
+    配置perfetch=1,意思就是告诉RabbitMQ在我这个消费者当前消息还没处理完的时候就不要再给我发新消息了。
+
+
+4.实现广播效果（你的消息被所有的Queue收到）--exchange 理解为中间人
+  Exchange在定义的时候是有类型的，以决定到底是哪些Queue符合条件，可以接收消息
+        （a）fanout: 所有bind到此exchange的queue都可以接收消息                  具体看fanout_publisher
+        （b）direct: 通过routingKey和exchange决定的那个唯一的queue可以接收消息  (exchange type=direct)　
+        （c）topic:所有符合routingKey(此时可以是一个表达式)的routingKey所bind的queue可以接收消息
+             表达式符号说明：#代表一个或多个字符，*代表任何字符
+                  例：#.a会匹配a.a，aa.a，aaa.a等
+                      *.a会匹配a.a，b.a，c.a等
+                 注：使用RoutingKey为#，Exchange Type为topic的时候相当于使用fanout　
+
+headers: 通过headers 来决定把消息发给哪些queue
+
+5.缓存   --通过中间商，实现数据共享，放在内存中
+
+（主流：mongodb,  --直接持久化，既存在内存也存在硬盘
+        redis,    --默认存在内存，可以配置
+        memcache  --只能是内存
+         ）
+
+  Redis指令(大小写皆可以) --简单理解为一个字典
+  1）启动Redis
+    a. 打开cmd面板，进入Redis文件文件，输入redis-server.exe redis.windows.conf
+    b. 打开另外一个面板，之前的cmd面板不管吧，进入Redis文件位置，输入redis-cli.exe
+  2）指令
+      set name Jack ex 2  --表示只存活2秒钟
+      set age 25
+      keys   --查看key
+      get name
+      get age
+   3）Python操作redis
+   4）连接池
+      管理对一个redis server的所有连接，避免每次建立、释放连接的开销
+   5）操作
+      a.String操作
+      setbit(name, offset, value)
+      bitcount(key, start=None, end=None  二者结合可以统计用户量
+
+      >>setbit n5 1000 1
+      >>setbit n5 55   1
+      >>setbit n5 6000 1
+      >>bitcount n5 得到3
+
+      incr(self, name, amount=1)
+      # 自增 name对应的值，当name不存在时，则创建name＝amount，否则，则自增。
+
+      >> incr login_user  加1  1
+      >>incr  login_uer   加1  2
+
+         remote procedure call
+        问：怎么让从客户端让消息返回给服务端？
+        客户端将消息返回给新建立的队列，服务端监听这个队列
+      b.hash 操作
+        hset(name, key, value)
+          name对应的hash中设置一个键值对（不存在，则创建；否则，修改）
+          >>hset info age 12
+          >>hset info id 0001
+          >>HGETALL info
+          >>HGET info age  结果为12
+          >>HKEYs info     结果为 age,id
+          >>HVALS info     结果为12,001
+        hmset(name, mapping)
+          在name对应的hash中批量设置键值对
+          >>HMSET info2 k1 1 k2 2
+          >>hkeys info
+      c.list操作和set操作
+            lpush names Jack Mary Tom  --从左到右进入，先进后出
+            lrange names 0 -1   --结果是Tom Mary,Jack
+            Rpush  --lpush相反
+            LINSERT names AFTER Jack  TEST   --在Jack后插入
+            LSET names 3 Jack2  --具体位置具体值
+       set(集合）操作
+         sadd names3 Jack Mary Tom --添加
+         SMEMNERS names --读取集合
+         sdiff names2,nams3  --name2中有names3中没有
+         zdd z1 10 Jack 12 Tom 15 Mary 加权值
+
+       Redis默认支持16个数据库(保证同名的信息保存在不同的数据库中)
+       select 15  --进入到第16个数据库（默认从0开始）
+       move
+
+  6.管道
+  edis-py默认在执行每次请求都会创建（连接池申请连接）和断开（归还连接池）一次连接操作，
+  如果想要在一次请求中指定多个命令，
+  则可以使用pipline实现一次请求指定多个命令，
+  并且默认情况下一次pipline 是原子性操作。
+
+  7.发布订阅
+    a.建立redis_helper
+    b.建立订阅者
+    c.在redis命令上输入PUBLISH fm104.5 hello 就给订阅者发消息
