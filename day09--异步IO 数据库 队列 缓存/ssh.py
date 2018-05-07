@@ -2,6 +2,8 @@
 # -*- coding:utf-8 -*-
 # Author:HuShuangPing
 
+# 基于用户名和密码的 sshclient 方式登录
+
 import paramiko
 # 创建SSH对象
 ssh = paramiko.SSHClient()  #一个客户端
