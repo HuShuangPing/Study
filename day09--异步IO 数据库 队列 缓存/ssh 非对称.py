@@ -3,11 +3,13 @@
 # Author:HuShuangPing
 
 import paramiko
+#基于公钥密钥的 SSHClient 方式登录
 
+# 指定本地的RSA私钥文件,如果建立密钥对时设置的有密码，password为设定的密码，如无不用指定password参数
 private_key = paramiko.RSAKey.from_private_key_file('id_rsa31.txt')   #指定你的公钥在哪里
 
 # 创建SSH对象
-ssh = paramiko.SSHlient()
+ssh = paramiko.SSHClient()
 # 允许连接不在know_hosts文件中的主机
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 # 连接服务器
