@@ -1,6 +1,7 @@
-
+本文链接：http://www.cnblogs.com/wupeiqi/articles/5095821.html
 前提：开发堡垒机之前，先来学习Python的paramiko模块，该模块机遇SSH用于连接远程服务器并执行相关操作
- SSHClient
+     paramiko模块提供了ssh及sft进行远程登录服务器执行命令和上传下载文件的功能
+SSHClient
   用于连接远程服务器并执行基本命令
 
 
